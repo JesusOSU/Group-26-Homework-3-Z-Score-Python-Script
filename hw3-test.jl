@@ -56,14 +56,7 @@ function maxofp(P)
 end
 
 
-println("The mean of population1 is: ", mu_mean(population1))
-
-println("The mean of population2 is: ", mu_mean(population2))
-
-println("The mean of population3 is: ", mu_mean(population3))
-
-
-function testcase_1_2_3() #This function returns the expected values for test cases 1, 2, and 3.
+function testcase_1_2_3() #This function prints the expected values for test cases 1, 2, and 3. It should be a loop, but I am too lazy to do it the easier and correct way at this moment, lol.
 	mu1 = mu_mean(population1)
 	println(z_score(population1, mu1))
 
@@ -76,7 +69,7 @@ end
 
 testcase_1_2_3()
 
-function testcase_4_5_6_7_8_9()
+function testcase_4_5_6_7_8_9() #This prints the z-scores for the man and max value of each population. I apologize for this being an ugly mess...
 	x11 = minofp(population1)
 	println("Zscore of ", x11, " in ", population1," : ", z_score(population1, x11))
 
@@ -102,7 +95,7 @@ testcase_4_5_6_7_8_9()
 
 populationofpopulations = [population1, population2, population3] #Here's an array of our arrays for my convenience.
 
-function testcase_10_11_12(PP) #This function returns the expected values for test cases 4, 5, and 6.
+function testcase_10_11_12(PP) #This function returns the expected values for test cases 4, 5, and 6. This is done correct, with a loop.
 	for P in PP
 		n = 0
 		for x in P
