@@ -123,9 +123,9 @@ def testcases_10_11_12 (P):
 		X0 = X0 + z_score(x0, mu0, sigma0)
 	print("The sum of the Z-scores for each member of ", P, " is: ", X0)
 
-testcase_10_11_12(population1)
-testcase_10_11_12(population2)
-testcase_10_11_12(population3)
+testcases_10_11_12(population1)
+testcases_10_11_12(population2)
+testcases_10_11_12(population3)
 
 
 			
