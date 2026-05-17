@@ -90,6 +90,14 @@ def test_z_score_function():
 # participated in the group assignment work           #
 #######################################################
 
+mu_1 = mean(population1)
+mu_2 = mean(population2)
+mu_3 = mean(population3)
+
+sigma_1 = stdev(population1, mu_1)
+sigma_2 = stdev(population2, mu_2)
+sigma_3 = stdev(population3, mu_3)
+
 def z_score(x, mu, sigma):
     """
     x is the population item
@@ -102,16 +110,7 @@ def z_score(x, mu, sigma):
     # Participating group member names: Jesus Ortiz, Aliro Love, Kentaro Yamamoto.
     
     # Your code goes between this comment and the return statement
-    mu_1 = mean(population1)
-    mu_2 = mean(population2)
-    mu_3 = mean(population3)
-
-    sigma_1 = stdev(population1, mu_1)
-    sigma_2 = stdev(population2, mu_2)
-    sigma_3 = stdev(population3, mu_3)
-
-    x_1 = population1[3]
-    x_2 = population1[7]
-	x_3 = population1[12]
     
     return (x - mu) / sigma # Place the calculated z-score result between the return statement and this comment so it will be returned by the z_score function
+
+print(z_score(greatest(population1), mu_1, sigma_1))
