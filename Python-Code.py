@@ -114,3 +114,12 @@ def z_score(x, mu, sigma):
     return (x - mu) / sigma # Place the calculated z-score result between the return statement and this comment so it will be returned by the z_score function
 
 print(z_score(greatest(population1), mu_1, sigma_1))
+
+def testcases_10_11_12 (P)
+	mu0 = mean(P)
+	sigma0 = stdev(P, mu)
+	X0 = 0
+	for x0 in P:
+		X0 = X0 + z_score(x, mu, sigma)
+	print"The sum of the Z-scores for each member of ", P, " is: ", X0
+			
