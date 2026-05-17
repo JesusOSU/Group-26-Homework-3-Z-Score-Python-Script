@@ -117,9 +117,15 @@ print(z_score(greatest(population1), mu_1, sigma_1))
 
 def testcases_10_11_12 (P):
 	mu0 = mean(P)
-	sigma0 = stdev(P, mu)
+	sigma0 = stdev(P, mu0)
 	X0 = 0
 	for x0 in P:
-		X0 = X0 + z_score(x, mu, sigma)
-	print"The sum of the Z-scores for each member of ", P, " is: ", X0
+		X0 = X0 + z_score(x0, mu0, sigma0)
+	print("The sum of the Z-scores for each member of ", P, " is: ", X0)
+
+testcase_10_11_12(population1)
+testcase_10_11_12(population2)
+testcase_10_11_12(population3)
+
+
 			
