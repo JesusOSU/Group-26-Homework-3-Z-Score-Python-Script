@@ -112,20 +112,22 @@ def z_score(x, mu, sigma):
     # Your code goes between this comment and the return statement
     
     return (x - mu) / sigma # Place the calculated z-score result between the return statement and this comment so it will be returned by the z_score function
-
-print(z_score(greatest(population1), mu_1, sigma_1))
-
-def testcases_10_11_12 (P):
-	mu0 = mean(P)
-	sigma0 = stdev(P, mu0)
-	X0 = 0
-	for x0 in P:
-		X0 = X0 + z_score(x0, mu0, sigma0)
-	print("The sum of the Z-scores for each member of ", P, " is: ", X0)
-
-testcases_10_11_12(population1)
-testcases_10_11_12(population2)
-testcases_10_11_12(population3)
-
+	
+#############################################################################
+#				Functions for testing (made by Group 26)					#
+print(z_score(greatest(population1), mu_1, sigma_1))						#
+																			#
+def testcases_10_11_12 (P):													#
+	mu0 = mean(P)															#
+	sigma0 = stdev(P, mu0)													#
+	X0 = 0																	#
+	for x0 in P:															#
+		X0 = X0 + z_score(x0, mu0, sigma0)									#
+	print("The sum of the Z-scores for each member of ", P, " is: ", X0)	#
+																			#
+testcases_10_11_12(population1)												#
+testcases_10_11_12(population2)												#
+testcases_10_11_12(population3)												#
+#############################################################################
 
 			
