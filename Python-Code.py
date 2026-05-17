@@ -115,7 +115,7 @@ def z_score(x, mu, sigma):
 
 print(z_score(greatest(population1), mu_1, sigma_1))
 
-def testcases_10_11_12 (P)
+def testcases_10_11_12 (P):
 	mu0 = mean(P)
 	sigma0 = stdev(P, mu)
 	X0 = 0
